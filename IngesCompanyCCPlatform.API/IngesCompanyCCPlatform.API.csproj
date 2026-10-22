@@ -3,11 +3,26 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <LangVersion>14.0</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
+        <Version>0.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9"/>
+        <!-- Asp.Net Core related packages -->
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.13"/>
+        <PackageReference Include="Scalar.AspNetCore" Version="2.18.0"/>
+        <!-- Entity Framework Core related packages -->
+        <PackageReference Include="EntityFrameworkCore" Version="10.0.13" />
+        <PackageReference Include="EntityFrameworkCore.Relational" Version="10.0.13" />
+        <PackageReference Include="EntityFrameworkCore.Design" Version="10.0.13">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; buil; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <!-- MySQL Reference Framework Core Provider -->
+        <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.9" />
+        <!-- Naming conventions convertions related packages -->
+        <PackageReference Include="Humanizer" version = "3.0.10" />
     </ItemGroup>
 
 </Project>
