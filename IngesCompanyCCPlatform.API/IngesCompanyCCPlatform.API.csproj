@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <LangVersion>14.0</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -13,16 +13,16 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.13"/>
         <PackageReference Include="Scalar.AspNetCore" Version="2.18.0"/>
         <!-- Entity Framework Core related packages -->
-        <PackageReference Include="EntityFrameworkCore" Version="10.0.13" />
-        <PackageReference Include="EntityFrameworkCore.Relational" Version="10.0.13" />
-        <PackageReference Include="EntityFrameworkCore.Design" Version="10.0.13">
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.13"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.13"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13">
             <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; buil; native; contentfiles; analyzers</IncludeAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
         </PackageReference>
-        <!-- MySQL Reference Framework Core Provider -->
-        <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.9" />
-        <!-- Naming conventions convertions related packages -->
-        <PackageReference Include="Humanizer" version = "3.0.10" />
+        <!-- MySQL Entity Framework Core provider -->
+        <PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.9"/>
+        <!-- Naming convention conversion related packages -->
+        <PackageReference Include="Humanizer" Version="3.0.10"/>
     </ItemGroup>
 
 </Project>
